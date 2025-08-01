@@ -1,6 +1,6 @@
 # 🚀 Data Engineering Dev Environment
 
-Um template de **ambiente de desenvolvimento profissional** para engenheiros de dados, pronto para uso no **Ubuntu 22.04 / 24.04 LTS** com **Docker, Python, Postgres e VS Code Dev Containers**.
+Template de **ambiente de desenvolvimento para engenheiros de dados**, pronto para uso no **Ubuntu 22.04 / 24.04 LTS**, com **Docker, Python, Postgres e VS Code Dev Containers**.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/seu-usuario/data-engineering-dev-env?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/data-engineering-dev-env?style=flat-square)
@@ -8,23 +8,21 @@ Um template de **ambiente de desenvolvimento profissional** para engenheiros de 
 
 ---
 
-## 📦 O que está incluso
+## 📦 Conteúdo
 
-- **Python 3.11** com bibliotecas principais:
+- **Python 3.11** com bibliotecas essenciais:
   - Pandas, SQLAlchemy, Requests
   - Airflow + Providers (Google, Postgres)
   - BigQuery SDK, PySpark, Dask
   - Ferramentas para testes e validação de dados
 - **Postgres local** via Docker Compose
 - **Dockerfile** otimizado para pipelines de dados
-- **Dev Container** com extensões do VS Code pré-instaladas
-- Scripts de automação para preparar todo ambiente em 1 comando
+- **Dev Container** com extensões VS Code pré-configuradas
+- **Scripts de automação** para configurar todo o ambiente em um único comando
 
 ---
 
 ## ⚡ Instalação Rápida
-
-Clone o repositório e execute:
 
 ```bash
 git clone https://github.com/vivinfor/data-engineering-dev-env.git
@@ -32,27 +30,23 @@ cd data-engineering-dev-env
 chmod +x bootstrap_data_env.sh
 ./bootstrap_data_env.sh
 ```
+🔄 **Reinicie o sistema** para aplicar permissões do Docker.
 
-🔄 **Reinicie o sistema** após a execução para aplicar permissões do Docker.
-
-Abra o projeto no VS Code:
-
+Abra no VS Code:
 ```bash
 code ~/projects/data_env
 ```
-
-Clique em **Reopen in Container** → seu ambiente estará pronto.
+Clique em **Reopen in Container** → ambiente pronto para uso.
 
 ---
 
-## 🛠 Estrutura do projeto
+## 🛠 Estrutura
 
 ```
 data-engineering-dev-env/
- ├── bootstrap_data_env.sh        # Script único para setup completo
- ├── ubuntu_post_install.sh       # Script pós-instalação do sistema
- ├── setup_dev_container.sh       # Script para preparar ambiente manualmente
- ├── dev_env_package.zip          # Pacote com Dockerfile, libs e configs
+ ├── bootstrap_data_env.sh        # Script único para setup
+ ├── ubuntu_post_install.sh       # Pós-instalação do sistema
+ ├── setup_dev_container.sh       # Setup manual do ambiente
  ├── dev_env_package/
  │   ├── Dockerfile
  │   ├── requirements.txt
@@ -67,11 +61,11 @@ data-engineering-dev-env/
 
 ## 💡 Como funciona
 
-1. Instala Docker, Python, VS Code e dependências essenciais
-2. Cria a pasta de projetos em `~/projects/data_env`
+1. Instala Docker, Python, VS Code e dependências
+2. Cria a pasta de projeto `~/projects/data_env`
 3. Configura Postgres local para testes
-4. Constrói container Python com todas as bibliotecas para engenharia de dados
-5. VS Code detecta Dev Container com extensões ideais já instaladas
+4. Constrói container Python com bibliotecas para engenharia de dados
+5. VS Code detecta o Dev Container com extensões ideais já instaladas
 
 ---
 
@@ -86,10 +80,10 @@ data-engineering-dev-env/
 ## 🤝 Contribuições
 
 Pull requests são bem-vindos!  
-Sugestões de melhorias para o setup são incentivadas.
+Sugestões de melhorias são incentivadas.
 
 ---
 
 ## 📜 Licença
 
-Este projeto é de uso livre sob a licença MIT.
+MIT License – uso livre e aberto.
