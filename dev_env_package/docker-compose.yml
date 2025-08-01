@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  dev-env:
+    build: .
+    container_name: data_dev_env
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
