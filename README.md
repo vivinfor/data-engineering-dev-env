@@ -27,7 +27,7 @@ Um template de **ambiente de desenvolvimento profissional** para engenheiros de 
 Clone o repositório e execute:
 
 ```bash
-git clone https://github.com/seu-usuario/data-engineering-dev-env.git
+git clone https://github.com/vivinfor/data-engineering-dev-env.git
 cd data-engineering-dev-env
 chmod +x bootstrap_data_env.sh
 ./bootstrap_data_env.sh
